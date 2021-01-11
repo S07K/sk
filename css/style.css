@@ -40,17 +40,20 @@
 			{
 				margin: 10px 10px 10px 10px !important;
 				text-align: center !important;
-				font-size: 3vw;
 				width: 100%;
 			}
 			#projects
 			{
-				padding: 0px;
+				padding: 1px !important;
 			}
 			#card
 			{
 				width: auto !important;
 			}
+			#card:hover
+			{
+	            transform: scale(0.9) !important;
+	        }
 			.row
 			{
 				flex-direction: column !important;
@@ -145,7 +148,6 @@
 		#card-details
 		{
 			text-align: center;
-			font-size: 1vw;
 		}
 		.row 
 		{
