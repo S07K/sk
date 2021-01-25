@@ -1,10 +1,9 @@
-
+<style type="text/css">
 		body
 		{
 			margin: 0;
 			background : black;
 			font-family: 'Roboto', sans-serif; 
-
 		}
 		#main
 		{
@@ -54,12 +53,12 @@
 			#photo
 			{
 				max-width: 100% !important;
-				height: 60vh !important;
+				height: auto !important;
 			}
 			.photo
 			{
 				max-width: 100% !important;
-				height: 60vh !important;
+				height: auto !important;
 			}
 			#info
 			{
@@ -107,6 +106,7 @@
 			animation-name: slide;
 			animation-duration: 3s;
 		}
+
 		#info
 		{
 			max-width: 100%;
@@ -183,7 +183,7 @@
 		{
   			
   			background-color: #fff;
-  			border: 1px solid #dee2e6;
+  			border: 1px solid #425C5A;
   			border-radius: 10px;
   			max-width: 100%;
   			height: auto;
@@ -225,17 +225,92 @@
 		#brand
 		{
 			color: #C6FFDD;
-			font-size: 19px;
+			font-size: 35px;
 			padding: 9px 10px 9px 5px;
 			border-right: 2px solid #C6FFDD;
 		}
+		#brand:hover 
+		{
+			transform: scale(1.1);
+			border-right: 0px solid #000000;
+			border-bottom: 2px solid #C6FFDD;
+		}
 		#right
 		{
-			
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
 		}
-		#git
+		#right a
 		{
-			width: 30px;
-			height: 30px;
-			padding: 3px;
+			font-size: 35px;
+			padding: 8px;
+			max-width: 100%;
+			height: auto;
 		}
+		.fa-github-square, .fa-linkedin, .fa-facebook-square, .fa-instagram
+		{
+			/*transform: scale(2.1);*/
+			max-width: auto;
+			height: auto;
+			color: #C6FFDD;
+			text-shadow: 0 4px 8px 0 rgba(0,0,0,0.9);
+		}
+		.fa-instagram:hover
+		{
+			/*color: ;*/
+			transform:scale(1.2);
+		}
+		.fa-github-square:hover
+		{
+			/*color: #000000;*/
+			transform:scale(1.2);
+		}
+		.fa-linkedin:hover
+		{
+			/*color: #0a66c2;*/
+			transform:scale(1.2);
+		}
+		.fa-facebook-square:hover 
+		{
+			/*color: #385898;*/
+			transform:scale(1.2);
+		}
+
+		.loader-wrapper 
+		{
+			  width: 100%;
+			  height: 100%;
+			  position: absolute;
+			  top: 0;
+			  left: 0;
+			  color: #C6FFDD;
+			  font-size: 30px;  
+			  background-color: #425C5A;
+			  display:flex;
+			  justify-content: center;
+			  align-items: center;
+			}
+
+		.loader 
+		{
+			  display: inline-block;
+			  max-width: auto;
+				height: auto;
+			  position: relative;
+			  display: flex;
+			  justify-content: center;
+			  align-items: center;   
+			                   /******** <- Remove this line *********/
+			  animation: loader 3s infinite ease-in;
+			}
+
+		@keyframes loader 
+		{
+		  0% { transform: rotate(0deg);}
+		  25% { transform: rotate(180deg);}
+		  50% { transform: rotate(180deg);}
+		  75% { transform: rotate(360deg);}
+		  100% { transform: rotate(360deg);}
+		}
+	</style>
