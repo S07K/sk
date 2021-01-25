@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="crossorigin="anonymous"></script>
 	<title>Portfolio</title>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -14,14 +15,16 @@
 		<header id="head">
 			<div class="blur" style="width: 100%;">
 				<figure id = "image">
-					<div class="photo"><img src="1.jpg" id="photo"></div>
+						<div class="photo">
+						<img src="1.jpg" id="photo" alt="photo of Shubham Kumar" title="Shubham Kumar">
+						</div>
 				</figure>
 				<div id = "info">
 					<h1>Shubham Kumar</h1>
 					<h5>Student at Shaheed Sukhdev College Of Business Studies. '22</h5>
 					<p>
 						<h2>Frontend Web Developer</h2>
-						Skill Set : HTML, CSS, Bootstap.
+						Skill Set : <i class="fab fa-html5"></i> HTML  , <i class="fab fa-css3-alt"></i> CSS , <i class="fab fa-bootstrap"></i> Bootstap  .
 					</p>
 				</div>	
 			</div>
@@ -32,7 +35,7 @@
 				<div class="col">
 					<div id = "card">
 						<a href="https://s07k.github.io/selling_site/">
-							<img src="selling site.png">
+							<img src="Selling site.png">
 						</a>
 						<div id="card-details">
 							<b>A simple Selling Site.</b>
@@ -131,15 +134,23 @@
 		</section>
 		<footer id="foot">
 				<div id="left">
-					<div id="brand"><b>S07K</b></div>
-
+					<div id="brand"><a href="" style="text-decoration: none;color: inherit;"><b>S07K</b></a></div>
 				</div>
 				<div id="right">
-					<div>
-						<a href=""><img id="git" src="github.png"></a>
-					</div>
+					<a href="#"><i class="fab fa-instagram"></i></a>
+					<a href="#"><i class="fab fa-github-square"></i></a>
+					<a href="https://www.linkedin.com/in/shubham-kumar-957a33200"><i class="fab fa-linkedin"></i></a>
+					<a href="#"><i class="fab fa-facebook-square"></i></a>
 				</div>
 		</footer>
 	</main>
+    <div class="loader-wrapper">
+    	<i class="fas fa-spinner loader"></i>
+    </div>
+    <script>
+        $(window).on("load",function(){
+          $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>
 </body>
 </html>
